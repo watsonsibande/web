@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson Sibande - ICT Expert</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your main stylesheet -->
+    <link rel="stylesheet" href="css/nav.css"> <!-- Link to navstylesheet -->
+    <link rel="stylesheet" href="css/home.css"> <!-- Link to homestylesheet -->
+    <link rel="stylesheet" href="css/footer.css"> <!-- Link to homestylesheet -->
+    <link rel="stylesheet" href="css/services.css"> <!-- Link to servicestylesheet -->
+    <link rel="stylesheet" href="css/portfolio.css"> <!-- Link to servicestylesheet -->
+    <link rel="stylesheet" href="css/testimonials.css"> <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="css/contact.css"> <!-- Link to servicestylesheet -->
+    <link rel="stylesheet" href="css/about.css"> <!-- Link to servicestylesheet -->
+    
+</head>
+
+
+<body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+});
+
+</script>
+
+<!--
+<div class="development-banner">
+    <p>⚠️ This website is currently under development. Some features may not be available or fully functional & infomation may not be fully accurate</p>
+</div>
+-->
+<nav>
+    <div class="menu-toggle">☰</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="testimonials.html" >Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html" >About Me</a></li>
+    </ul>
+</nav>
+
+
+<div class="home-content">
+<div class="services-section">
+    <h2>My Services</h2>
+    <div class="services-container">
+        <div class="service-item">
+            <h3>ICT Consulting</h3>
+            <p>Helping businesses with technology strategies and implementations.</p>
+            <div class="service-detail">
+                <p>In-depth analysis and consulting on IT infrastructure, technology adoption, and strategy development.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <h3>Web Development</h3>
+            <p>Custom website development to meet your business needs.</p>
+            <div class="service-detail">
+                <p>Full-stack development services including front-end, back-end, and database management to build robust websites.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <h3>Network Solutions</h3>
+            <p>Design and implementation of networking solutions.</p>
+            <div class="service-detail">
+                <p>Design, setup, and management of network systems to ensure secure and efficient communication within your organization.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <h3>Training & Support</h3>
+            <p>Offering ICT training programs and ongoing support services.</p>
+            <div class="service-detail">
+                <p>Training sessions and support to help your team effectively use technology and troubleshoot any issues.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<footer>
+<p>&copy; <span id="year"></span> Watson Sibande. All Rights Reserved.</p>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</footer>
+</body>
+</html>

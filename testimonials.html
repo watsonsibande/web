@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson Sibande - ICT Expert</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your main stylesheet -->
+    <link rel="stylesheet" href="css/nav.css"> <!-- Link to navstylesheet -->
+    <link rel="stylesheet" href="css/home.css"> <!-- Link to homestylesheet -->
+    <link rel="stylesheet" href="css/footer.css"> <!-- Link to homestylesheet -->
+    <link rel="stylesheet" href="css/services.css"> <!-- Link to servicestylesheet -->
+    <link rel="stylesheet" href="css/portfolio.css"> <!-- Link to servicestylesheet -->
+    <link rel="stylesheet" href="css/testimonials.css"> <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="css/contact.css"> <!-- Link to servicestylesheet -->
+    <link rel="stylesheet" href="css/about.css"> <!-- Link to servicestylesheet -->
+    
+</head>
+
+
+<body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+});
+
+</script>
+
+<!--
+<div class="development-banner">
+    <p>⚠️ This website is currently under development. Some features may not be available or fully functional & infomation may not be fully accurate</p>
+</div>
+-->
+<nav>
+    <div class="menu-toggle">☰</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" >Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="testimonials.html" class="active">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Me</a></li>
+    </ul>
+</nav>
+
+
+
+<div class="home-content">
+<div class="testimonials-section">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial-item">
+        <p>"Watson's ICT services transformed our business. Highly recommend!" - Client A</p>
+    </div>
+    <div class="testimonial-item">
+        <p>"Professional and reliable. Watson delivers quality work." - Client B</p>
+    </div>
+    <!-- Add more testimonials as needed -->
+</div>
+</div>
+<footer>
+<p>&copy; <span id="year"></span> Watson Sibande. All Rights Reserved.</p>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</footer>
+</body>
+</html>

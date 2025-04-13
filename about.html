@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson Sibande - ICT Expert</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your main stylesheet -->
+    <link rel="stylesheet" href="css/nav.css"> <!-- Link to navstylesheet -->
+    <link rel="stylesheet" href="css/home.css"> <!-- Link to homestylesheet -->
+    <link rel="stylesheet" href="css/footer.css"> <!-- Link to homestylesheet -->
+    <link rel="stylesheet" href="css/services.css"> <!-- Link to servicestylesheet -->
+    <link rel="stylesheet" href="css/portfolio.css"> <!-- Link to servicestylesheet -->
+    <link rel="stylesheet" href="css/testimonials.css"> <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="css/contact.css"> <!-- Link to servicestylesheet -->
+    <link rel="stylesheet" href="css/about.css"> <!-- Link to servicestylesheet -->
+    
+</head>
+
+
+<body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+});
+
+</script>
+
+<!--
+<div class="development-banner">
+    <p>⚠️ This website is currently under development. Some features may not be available or fully functional & infomation may not be fully accurate</p>
+</div>
+-->
+<nav>
+    <div class="menu-toggle">☰</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" >Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="testimonials.html" >Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+    </ul>
+</nav>
+
+
+<div class="home-content">
+<div class="about-section">
+    <h2>About Me</h2>
+    <p>My name is Watson Sibande, an ICT expert from Malawi with extensive experience in technology consulting, web development, and network solutions.</p>
+    <img src="images/watson.jpg" alt="Watson Sibande" class="about-image">
+    
+    <h3>Skills</h3>
+    <ul class="skills-list">
+        <li>
+            <button class="accordion">ICT Consulting</button>
+            <div class="accordion-content">
+                <p>Helping businesses with technology strategies and implementations. Experience includes advising on technology infrastructure, software selection, and system integration to optimize business operations.</p>
+            </div>
+        </li>
+        <li>
+            <button class="accordion">Web Development</button>
+            <div class="accordion-content">
+                <p>Custom website development tailored to your business needs. Expertise in building responsive websites, e-commerce platforms, and content management systems using the latest technologies and best practices.</p>
+            </div>
+        </li>
+        <li>
+            <button class="accordion">Network Solutions</button>
+            <div class="accordion-content">
+                <p>Design and implementation of networking solutions to ensure seamless communication and data flow. Skills include network setup, security measures, and troubleshooting to maintain efficient and secure network operations.</p>
+            </div>
+        </li>
+        <li>
+            <button class="accordion">Training & Support</button>
+            <div class="accordion-content">
+                <p>Offering ICT training programs and ongoing support services. Providing training on new technologies, software tools, and best practices to help teams stay up-to-date and maximize their technology investments.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const accordions = document.querySelectorAll('.accordion');
+        
+        accordions.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const isVisible = content.style.display === 'block';
+                
+                // Hide all other content
+                document.querySelectorAll('.accordion-content').forEach(item => {
+                    item.style.display = 'none';
+                });
+                
+                // Toggle the clicked content
+                content.style.display = isVisible ? 'none' : 'block';
+            });
+        });
+    });
+</script>
+
+
+</div>
+<footer>
+<p>&copy; <span id="year"></span> Watson Sibande. All Rights Reserved.</p>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</footer>
+</body>
+</html>
+
