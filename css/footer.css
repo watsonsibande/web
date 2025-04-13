@@ -1,0 +1,30 @@
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+  
+    color: #0f0000;
+    position: static;
+    bottom: 0;
+    width: 100%;
+
+    padding: 15px 14px;
+  border-radius: 0px;
+  box-shadow: 1px 0px 4px rgba(67, 66, 71, 0);
+  min-height: 80px;
+  margin-top: 0%;
+  width: 100%;
+  border-top: 2px solid #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        position: static;
+    }
+    
+
+}

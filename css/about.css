@@ -1,0 +1,78 @@
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.about-image {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
+
+.accordion {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+    font-size: 1.2em;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.accordion:hover {
+    background-color: #555;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.accordion-content p {
+    margin: 0;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-image {
+        max-width: 150px;
+    }
+    
+    .accordion {
+        font-size: 1em;
+    }
+}
